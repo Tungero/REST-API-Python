@@ -1,3 +1,5 @@
+# to use this module type in cmd:
+# pip install requests
 import requests
 
 def get(ID=None):
