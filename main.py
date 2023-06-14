@@ -50,7 +50,7 @@ def update_movie(id):
     movie = movies.get(id)
 
     if movie == None:
-        abort(400, f"Bad request. Movie with id {id} does not exist.")
+        abort(404, f"Movie with id {id} not found.")
 
     if 'title' not in data or 'release_year' not in data:
         abort(400, "Bad request. Missing title or release_year arguments")
